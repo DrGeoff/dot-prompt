@@ -1,0 +1,9 @@
+
+prompt_command()
+{
+    dish_log_command 
+    #printf "%s@%s:%s\007" "${USER}" "${HOSTNAME%%.*}" "${PWD/#$HOME/\~}"
+}
+
+export PROMPT_COMMAND=prompt_command
+
